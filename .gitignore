@@ -1,4 +1,6 @@
 *.log
 .idea/
 .examples/
+git_help.txt
 simulation_model/*.workspace
+
