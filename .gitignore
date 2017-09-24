@@ -1,0 +1,4 @@
+*.log
+.idea/
+.examples/
+simulation_model/*.workspace
