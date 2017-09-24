@@ -3,6 +3,7 @@ LED Cube 8x8x8: software code, circuit design, simulation model.
 
 # Software code
 Source code written in the program "mikroC compiler for PIC" for PIС18F2550, includes all the necessary functions for LED Cube control, and over 20 lighting effects. For the controller firmware program has been used PICkit2 Programmer, but you can use any other suitable for the selected controller.
+The program is a port of http://www.instructables.com/id/Led-Cube-8x8x8/ to PIС18F2550.
 
 # Circuit board
 Circuit board for the project prepared by the Sprint-6 Layouts and imported in standard Gerber format.
