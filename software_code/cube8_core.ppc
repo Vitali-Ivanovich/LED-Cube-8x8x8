@@ -1,0 +1,68 @@
+[DeviceName]
+Value=P18F2550
+[DeviceClock]
+Value=20
+[MainUnit]
+Value=cub_core.c
+[DeviceFlags]
+Count=30
+Value0=_CPUDIV_OSC1_PLL2_1L = $00E7
+Value1=_CPUDIV_OSC2_PLL3_1L = $00EF
+Value2=_FOSC_HS_1H = $00FC
+Value3=_PWRT_ON_2L = $00FE
+Value4=_BOR_ON_2L = $00FF
+Value5=_WDT_OFF_2H = $00FE
+Value6=_MCLRE_OFF_3H = $007F
+Value7=_PBADEN_ON_3H = $00FF
+Value8=_STVREN_ON_4L = $00FF
+Value9=_LVP_OFF_4L = $00FB
+Value10=_XINST_OFF_4L = $00BF
+Value11=_DEBUG_OFF_4L = $00FF
+Value12=_CP0_OFF_5L = $00FF
+Value13=_CP1_OFF_5L = $00FF
+Value14=_CP2_OFF_5L = $00FF
+Value15=_CP3_OFF_5L = $00FF
+Value16=_CPB_OFF_5H = $00FF
+Value17=_CPD_OFF_5H = $00FF
+Value18=_WRT0_OFF_6L = $00FF
+Value19=_WRT1_OFF_6L = $00FF
+Value20=_WRT2_OFF_6L = $00FF
+Value21=_WRT3_OFF_6L = $00FF
+Value22=_WRTB_OFF_6H = $00FF
+Value23=_WRTC_OFF_6H = $00FF
+Value24=_WRTD_OFF_6H = $00FF
+Value25=_EBTR0_OFF_7L = $00FF
+Value26=_EBTR1_OFF_7L = $00FF
+Value27=_EBTR2_OFF_7L = $00FF
+Value28=_EBTR3_OFF_7L = $00FF
+Value29=_EBTRB_OFF_7H = $00FF
+[BuildType]
+bType=0
+[ProjectFiles]
+Count=1
+Value0=cube8_core.c
+Value1=cube8_core.c
+[HeaderFiles]
+Count=0
+[ObjLibFiles]
+Count=0
+[PLDFiles]
+Count=0
+[EEPROMinfo]
+isused=0
+[SearchPath]
+Count=12
+Value0=F:\Проекты\Микроконтроллеры\КУБ\8x8x8\КУБ 8x8x8 [2015.09.21]\Ядро\
+Value1=C:\Program Files (x86)\Mikroelektronika\mikroC\Defs\
+Value2=C:\Program Files (x86)\Mikroelektronika\mikroC\Uses\p18\
+Value3=C:\Program Files\Mikroelektronika\mikroC\Defs\
+Value4=C:\Program Files\Mikroelektronika\mikroC\Uses\p18\
+Value5=F:\Проекты\PIC\КУБ\КУБ [2013.12.11]\
+Value6=F:\Проекты\PIC\КУБ\КУБ [2013.12.24]\
+Value7=F:\Проекты\PIC\КУБ\КУБ [2013.12.26]\TMR0\
+Value8=F:\Проекты\PIC\КУБ\КУБ [2013.12.30]\
+Value9=F:\Проекты\Микроконтроллеры\КУБ\8x8x8\КУБ 8x8x8 [2015.08.17]\
+Value10=F:\Проекты\Микроконтроллеры\КУБ\8x8x8\КУБ 8x8x8 [2015.09.21]\Ядро\
+Value11=
+[IncludePath]
+Count=0
