@@ -4,10 +4,6 @@ main
 		Div_16x16_S_L
 	GlobalInicube8_core
 	launch_effect
-		cube_draw
-			delay_msec
-		setvoxel
-			inrange
 		effect_pathspiral
 			Div_16x16_S
 				Div_16x16_S_L

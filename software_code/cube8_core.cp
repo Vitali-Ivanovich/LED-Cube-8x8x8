@@ -1,5 +1,5 @@
 #line 1 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
-#line 34 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
+#line 22 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
 volatile char cube[ 8 ][ 8 ][ 8 ];
 volatile char buffer[ 8 ][ 8 ][ 8 ];
 char effect=1, fl_button=0, fl_start=0, fl_reset=0;
@@ -666,18 +666,18 @@ volatile const unsigned char font8eng[728][8]={
  {0x00, 0x0c, 0x50, 0x50, 0x50, 0x3c, 0x00, 0x00},
  {0x00, 0x44, 0x64, 0x54, 0x4c, 0x44, 0x00, 0x00}
 };
-#line 893 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
+#line 881 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
 void font_getchar(char chr, unsigned char dst[]) {
  int i;
  chr -= 32;
-#line 905 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
+#line 893 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
  if ( 8 ==8) {
  for (i=0; i< 8 ; i++) {
  dst[i]=font8eng[chr][i];
  }
  }
 }
-#line 925 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
+#line 913 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
 void effect_rain(int iterations) {
  int i, ii;
  int rnd_x;
@@ -717,9 +717,6 @@ void effect_planboing(char axis, int speed) {
  cube_draw(1, speed);
  if (fl_button) { fl_button=0; return; }
  }
-}
-#line 998 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
-void effect_blinky2() {
 }
 
 
@@ -1271,9 +1268,6 @@ void effect_boingboing(int iterations, char delay, unsigned char mode, unsigned 
  iterations--;
  }
 }
-#line 1569 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
-void effect_random_filler(int delay, char state) {
-}
 
 
 void draw_positions_axis(char axis, unsigned char positions[ 8 * 8 ], int invert) {
@@ -1521,12 +1515,6 @@ void effect_random_sparkle(void) {
 }
 
 
-void effect_telcstairs(int invert, int delay, int val) {
-#line 1865 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
-}
-
-
-
 void effect_wormsqueeze(int axis, int direction, int iterations, int delay) {
  int x, y, i, j, k, dx, dy, size, cube_size;
  int origin=0;
@@ -1610,7 +1598,7 @@ void effect_pathmove(unsigned char *path, int length) {
  }
  for (z=0; z< 8 ; z++)
  clrvoxel(z,  8  - 1 - (path[0] >> 4 & 0x0f),  8  - 1 - ((path[0])&0x0f));
-#line 1965 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
+#line 1846 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
 }
 
 
@@ -1926,9 +1914,6 @@ void effect_squarespiral2(int iterations, int delay) {
  loc=0;
  }
 }
-#line 2299 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
-void effect_twister(int iterations, int delay) {
-}
 
 
 void effect_fireworks(char iterations) {
@@ -1991,37 +1976,7 @@ void effect_fireworks(char iterations) {
  delay_ms(600);
  }
 }
-#line 2470 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
-void effect_int_sidewaves(int iterations, int delay) {
-}
-#line 2597 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
-void effect_plane_flip(unsigned char LUT[], unsigned char start, unsigned char end, int delay) {
-}
-#line 2617 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
-void effect_filip_filop(int iterations, int delay) {
-}
-#line 2722 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
-void effect_cubix(int iterations, unsigned char cubies) {
-}
-#line 2753 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
-void effect_int_ripples(int iterations, int delay) {
-}
-#line 2788 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
-void effect_side_ripples(int iterations, int delay) {
-}
-#line 2823 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
-void effect_mirror_ripples(int iterations, int delay) {
-}
-#line 2866 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
-void effect_quad_ripples(int iterations, int delay) {
-}
-#line 2914 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
-void effect_rain2(int iterations, int delay, int hold, int speed) {
-}
-#line 3052 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
-void effect_spinning_plane(int direction, int iterations, int delay) {
-}
-#line 3375 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
+#line 2235 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
 void launch_effect(char effect) {
  char i, bitmap;
 
@@ -2051,11 +2006,8 @@ void launch_effect(char effect) {
  break;
  case 4:
 
-
  effect_sendvoxels_rand_axis(50, 2, 1, 5);
  effect_sendvoxels_rand_axis(50, 3, 1, 5);
-
-
  break;
  case 5:
 
@@ -2069,16 +2021,8 @@ void launch_effect(char effect) {
  break;
  case 7:
 
-
-
-
-
-
-
  effect_boxside_randsend_parallel(2, 0, 1, 2);
  effect_boxside_randsend_parallel(2, 1, 1, 2);
-
-
  effect_boxside_randsend_parallel(3, 0, 1, 2);
  effect_boxside_randsend_parallel(3, 1, 1, 2);
  break;
@@ -2090,10 +2034,6 @@ void launch_effect(char effect) {
 
  effect_wormsqueeze(2, 0, 200, 4);
  effect_wormsqueeze(3, 1, 200, 4);
-
-
-
-
  break;
  case 10:
  effect_rand_patharound(1000, 3);
@@ -2115,7 +2055,6 @@ void launch_effect(char effect) {
  effect_axis_updown_randsuspend(3, 2, 50, 1);
  effect_axis_updown_randsuspend(2, 2, 50, 0);
  effect_axis_updown_randsuspend(2, 2, 50, 1);
-
  break;
  case 14:
 
@@ -2133,7 +2072,6 @@ void launch_effect(char effect) {
  effect_squarespiral2(200, 4);
  break;
  case 16:
-#line 3526 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
  break;
  case 17:
 
@@ -2154,28 +2092,14 @@ void launch_effect(char effect) {
  effect_squarespiral2(200, 4);
  break;
  case 21:
-
-
- setvoxel(7, 7, 7);
- cube_draw(1, 100);
-
-
-
-
-
-
-
-
-
+ effect_planboing(1, 3);
  break;
  default:
- effect_planboing(1, 3);
-
+ effect_stringfly("ERROR");
  break;
  }
-#line 3577 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
 }
-#line 3595 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
+#line 2373 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
 void main(void) {
  INTCON = 0b11110000;
  INTCON2 = 0b10000101;
@@ -2199,11 +2123,9 @@ void main(void) {
 
  if (fl_start==0) {
  fl_start=1;
-
  effect=rand()% 22 ;
-
  }
-#line 3630 "E:/mvi/Programming/GitHub/LED-Cube-8x8x8/software_code/cube8_core.c"
+
  launch_effect(effect);
  }
 }
