@@ -1,6 +1,6 @@
 *.log
+*.vsdx
+git_help.txt
 .idea/
 .examples/
-git_help.txt
 simulation_model/*.workspace
-
