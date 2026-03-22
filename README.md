@@ -10,6 +10,3 @@ Circuit board for the project prepared by the Sprint-6 Layouts and imported in s
 
 # Simulation model
 Simulation model for debugging of operation of the circuit and check the effects of the prepared environment model is designed in the Proteus Design Suite 8.5.
-
-# Feedback
-E-mail: murach.vi@gmail.com
